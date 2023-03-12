@@ -65,3 +65,13 @@
 .footerli {
   @apply cursor-pointer hover:text-primary-bis duration-200 ease-in-out;
 }
+
+/* accordion */
+
+.accordion-header {
+  @apply font-main font-[500] hover:text-primary-bis text-neutral-bis !important;
+}
+
+.accordion-body {
+  @apply font-main text-[15px] leading-7 text-neutral !important;
+}
