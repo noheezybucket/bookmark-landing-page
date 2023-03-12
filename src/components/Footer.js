@@ -1,10 +1,20 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 import logo from "../assets/logo-bookmark-white.svg";
 import facebook from "../assets/icon-facebook.svg";
 import twitter from "../assets/icon-twitter.svg";
+import error_icon from "../assets/icon-error.svg";
 
 const Footer = () => {
+  const [email, setemail] = useState();
+  const [error, seterror] = useState("Whoops, make sure it's an email");
+
+  useEffect(() => {}, [email]);
+
+  const handleSub = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <footer>
       <div className="bg-primary py-[50px]">
@@ -13,18 +23,35 @@ const Footer = () => {
           <p className="text-3xl w-[35%] mx-auto">
             Stay up to date with what we're doing
           </p>
-          <form className="space-x-4">
-            <input
-              type="email"
-              placeholder="Enter your email address"
-              required
-              className="p-2 rounded text-sm w-[25%]"
-            />
-            <input
-              type="submit"
-              value="Contact Us"
-              className="bg-primary-bis p-2 rounded text-sm"
-            />
+          <form className="space-x-4 flex justify-center">
+            <div className="relative bg-primary-bis border-2 rounded border-primary-bis w-[30%]">
+              <input
+                type="email"
+                placeholder="Enter your email address"
+                className="block p-2 rounded text-sm w-full text-black !important"
+                onChange={(e) => console.log(e.target.value)}
+              />
+              {error ? (
+                <>
+                  <span className="absolute top-[7px] right-2">
+                    <img src={error_icon} alt="error" />
+                  </span>
+                  <span className="block text-xs p-2 text-left italic">
+                    {error}
+                  </span>
+                </>
+              ) : (
+                ""
+              )}
+            </div>
+
+            <div>
+              <input
+                type="submit"
+                value="Contact Us"
+                className="bg-primary-bis p-2 px-4 rounded text-sm cursor-pointer hover:bg-white hover:text-primary-bis border-2 border-primary-bis duration-150"
+              />
+            </div>
           </form>
         </div>
       </div>
