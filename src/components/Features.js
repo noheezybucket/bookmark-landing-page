@@ -1,5 +1,5 @@
 import React from "react";
-import Tab from "./Tab";
+import TabsComponent from "./Tabs";
 
 const Features = () => {
   return (
@@ -14,7 +14,9 @@ const Features = () => {
           </p>
         </div>
       </div>
-      <Tab />
+      <div className="py-[20px]">
+        <TabsComponent />
+      </div>
     </section>
   );
 };
