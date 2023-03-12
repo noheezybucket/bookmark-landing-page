@@ -75,3 +75,8 @@
 .accordion-body {
   @apply font-main text-[15px] leading-7 text-neutral !important;
 }
+
+/*  */
+.z-20 + .absolute {
+  @apply border-2 border-b-primary-bis shadow-none border-x-0 border-t-0 rounded-none !important;
+}

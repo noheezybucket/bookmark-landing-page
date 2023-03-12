@@ -36,11 +36,7 @@ const TabsComponent = () => {
     <Tabs value="bookmark">
       <TabsHeader className="bg-white">
         {data.map(({ label, value }) => (
-          <Tab
-            key={value}
-            value={value}
-            className="border-b-2 border-b-primary-bis mx-3"
-          >
+          <Tab key={value} value={value} className="mx-3">
             {label}
           </Tab>
         ))}
