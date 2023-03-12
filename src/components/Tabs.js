@@ -34,9 +34,13 @@ const TabsComponent = () => {
 
   return (
     <Tabs value="bookmark">
-      <TabsHeader className="bg-white">
+      <TabsHeader className="bg-white w-1/2 mx-auto">
         {data.map(({ label, value }) => (
-          <Tab key={value} value={value} className="mx-3">
+          <Tab
+            key={value}
+            value={value}
+            className="mx-3 hover:text-primary-bis  duration-150 ease-in-out"
+          >
             {label}
           </Tab>
         ))}

@@ -43,10 +43,14 @@ const Footer = () => {
           <div>
             <ul className="flex space-x-10 items-center">
               <li>
-                <img src={facebook} alt="facebook" />
+                <a href="###">
+                  <img src={facebook} alt="facebook" />
+                </a>
               </li>
               <li>
-                <img src={twitter} alt="twitter" />
+                <a href="###">
+                  <img src={twitter} alt="twitter" />
+                </a>
               </li>
             </ul>
           </div>

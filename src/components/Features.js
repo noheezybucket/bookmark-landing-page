@@ -3,7 +3,7 @@ import TabsComponent from "./Tabs";
 
 const Features = () => {
   return (
-    <section className="section-w-set py-[90px]">
+    <section className="section-w-set pt-[90px]">
       <div>
         <div className="text-center text-neutral-bis w-[45%] mx-auto space-y-4">
           <h2 className="section-title">Features</h2>
