@@ -5,15 +5,15 @@ import opera from "../assets/logo-opera.svg";
 
 const Extensions = () => {
   return (
-    <section className="w-7/12 mx-auto py-10 space-y-8 mb-32 mt-24">
-      <div className="text-center  text-neutral-bis w-[60%] mx-auto space-y-4">
+    <section className="w-10/12 lg:w-7/12 mx-auto py-10 space-y-8 mb-32 mt-24">
+      <div className="text-center  text-neutral-bis lg:w-[60%] mx-auto space-y-4">
         <h2 className="section-title">Download the extension</h2>
         <p className="text-neutral">
           We’ve got more browsers in the pipeline. Please do let us know if
           you’ve got a favourite you’d like us to prioritize.
         </p>
       </div>
-      <div className="flex justify-between">
+      <div className="flex flex-col lg:flex-row flex-wrap justify-between items-center ">
         {/* google firefox */}
         <div className="extensionBox">
           <img src={chrome} alt="chrome extension" />

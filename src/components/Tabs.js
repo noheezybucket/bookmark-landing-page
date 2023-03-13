@@ -34,12 +34,12 @@ const TabsComponent = () => {
 
   return (
     <Tabs value="bookmark">
-      <TabsHeader className="bg-white w-1/2 mx-auto">
+      <TabsHeader className="flex flex-col md:flex-row bg-white w-10/12 justify-center mx-auto">
         {data.map(({ label, value }) => (
           <Tab
             key={value}
             value={value}
-            className="mx-3 hover:text-primary-bis  duration-150 ease-in-out"
+            className="mx-3 hover:text-primary-bis py-3 border-y lg:border-none duration-150 ease-in-out"
           >
             {label}
           </Tab>
@@ -50,9 +50,9 @@ const TabsComponent = () => {
           <TabPanel
             key={value}
             value={value}
-            className="flex items-center justify-center gap-11 pt-16"
+            className="flex flex-col lg:flex-row items-center justify-center gap-11 pt-16"
           >
-            <div className="w-[45%]">
+            <div className="lg:w-[45%]">
               <img
                 src={require("../assets/illustration-features-tab-" +
                   img +
@@ -60,7 +60,7 @@ const TabsComponent = () => {
                 alt="alt"
               />
             </div>
-            <div className="space-y-4 w-[45%]">
+            <div className="space-y-4 lg:w-[45%] text-center lg:text-left">
               <h2 className="text-2xl font-bold">{title}</h2>
               <p>{desc}</p>
               <button className="hero-btn-1">More info</button>

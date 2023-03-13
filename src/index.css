@@ -35,7 +35,7 @@
 }
 
 .extensionBox {
-  @apply flex flex-col items-center text-center  shadow-lg shadow-gray-300 rounded-xl py-4 space-y-6;
+  @apply flex flex-col items-center text-center  shadow-lg shadow-gray-300 rounded-xl py-4 space-y-6 mx-auto;
 }
 
 .extensionBox img {
@@ -69,7 +69,7 @@
 /* accordion */
 
 .accordion-header {
-  @apply font-main font-[500] hover:text-primary-bis text-neutral-bis !important;
+  @apply font-main font-[500] text-left hover:text-primary-bis text-neutral-bis !important;
 }
 
 .accordion-body {

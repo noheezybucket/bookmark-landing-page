@@ -4,7 +4,7 @@ import AccordionComponent from "./Accordion";
 const FAQ = () => {
   return (
     <section className="section-w-set py-[50px]">
-      <div className="w-[45%] mx-auto">
+      <div className="w-full lg:w-[45%] mx-auto">
         <div className="text-center space-y-4">
           <h2 className="section-title">Frequently Asked Questions</h2>
           <p className="text-neutral">

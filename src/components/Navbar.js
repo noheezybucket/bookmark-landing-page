@@ -3,7 +3,7 @@ import bookmark from "../assets/logo-bookmark.svg";
 
 const Navbar = () => {
   return (
-    <header className="section-w-set py-5">
+    <header className="section-w-set py-5 hidden lg:block">
       <nav className="flex justify-between">
         <div>
           <a href="###">
