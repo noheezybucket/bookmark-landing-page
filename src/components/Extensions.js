@@ -5,7 +5,7 @@ import opera from "../assets/logo-opera.svg";
 
 const Extensions = () => {
   return (
-    <section className="w-10/12  mx-auto py-10 space-y-8 mb-32 mt-24">
+    <section className="w-10/12  lg:w-7/12 mx-auto py-10 space-y-8 mb-32 mt-24">
       <div className="text-center  text-neutral-bis lg:w-[60%] mx-auto space-y-4">
         <h2 className="section-title">Download the extension</h2>
         <p className="text-neutral">
@@ -13,7 +13,7 @@ const Extensions = () => {
           you’ve got a favourite you’d like us to prioritize.
         </p>
       </div>
-      <div className="flex gap-4 flex-row flex-wrap justify-between items-center ">
+      <div className="flex flex-col gap-4  lg:flex-row flex-wrap justify-between items-center ">
         {/* google firefox */}
         <div className="extensionBox">
           <img src={chrome} alt="chrome extension" />
